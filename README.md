@@ -16,5 +16,5 @@ We have developed and implemented a new metric called Recoveriness to estimate t
 - Run the program in sequence starting from '01-prepare_data.py'
 
 ## Published Dataset
-[Recoveriness.csv](https://zenodo.org/records/13729469)
-[All datasets](https://doi.org/10.5281/zenodo.13729992)
+- [Recoveriness.csv](https://zenodo.org/records/13729469)
+- [All datasets](https://doi.org/10.5281/zenodo.13729992)
