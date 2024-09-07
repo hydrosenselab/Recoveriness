@@ -102,59 +102,59 @@ except:
     print("Done!")
 
 
+"""
+Null operations
+"""
+data.isnull().sum().sum()
+data = data.replace([np.inf, -np.inf], np.nan)
+data = data.dropna(axis=0, how='any', subset=None, inplace=False)
+data.isnull().sum().sum()
+print(data.info())
+
+"""
+Extracting relevant columns
+"""
+data_relevant = data[["gauge", "lat", "lon", "start", "end",
+                      "peakq", "peakt", "dt", "area", "carea",
+                      "action", "minor", "moderate", "major", "regulation",
+                      "alpha", "beta", "cc", "usgs_area", "est_area",
+                      "error", "el", "k", "rl", "rr",
+                      "si", "rdd", "rbm", "rfocf", "slopeoutlet",
+                      "precip", "temp", "cnbasin", "cncell", "coemcell",
+                      "imperviousbasin", "imperviouscell", "kfact", "rockdepth", "rockvolume",
+                      "bpartexture", "dc", "ldd", "lbm", "lfocf",
+                      "ruggedness", "fd", "tp", "rt", "nfd",
+                      "ntp", "nrt", "nq", "county", "class",
+                      "prop", "state", "month", "year", "season",
+                      "maxseason", "r", "mr", "mr.ecdf", "recoveriness"
+                      ]]
+
+data_selected = data[[
+    "area", "el", "k", "rl", "rr",
+    "si", "slopeoutlet", "precip",
+    "temp", "kfact", "rockdepth",
+    "rockvolume", "bpartexture",
+    "cnbasin", "mr.ecdf"]]
+
+
+"""
+Save the dataframe
+"""
+# data.to_csv(path_or_buf="data_prepared.csv", sep=",")
+data_selected.to_csv(path_or_buf="data_prepared.csv", sep=",")
+
+print("Done!")
+
+
 # """
-# Null operations
+# Correlation
 # """
-# data.isnull().sum().sum()
-# data = data.replace([np.inf, -np.inf], np.nan)
-# data = data.dropna(axis=0, how='any', subset=None, inplace=False)
-# data.isnull().sum().sum()
-# print(data.info())
-#
-# """
-# Extracting relevant columns
-# """
-# data_relevant = data[["gauge", "lat", "lon", "start", "end",
-#                       "peakq", "peakt", "dt", "area", "carea",
-#                       "action", "minor", "moderate", "major", "regulation",
-#                       "alpha", "beta", "cc", "usgs_area", "est_area",
-#                       "error", "el", "k", "rl", "rr",
-#                       "si", "rdd", "rbm", "rfocf", "slopeoutlet",
-#                       "precip", "temp", "cnbasin", "cncell", "coemcell",
-#                       "imperviousbasin", "imperviouscell", "kfact", "rockdepth", "rockvolume",
-#                       "bpartexture", "dc", "ldd", "lbm", "lfocf",
-#                       "ruggedness", "fd", "tp", "rt", "nfd",
-#                       "ntp", "nrt", "nq", "county", "class",
-#                       "prop", "state", "month", "year", "season",
-#                       "maxseason", "r", "mr", "mr.ecdf", "recoveriness"
-#                       ]]
-#
-# data_selected = data[[
-#     "area", "el", "k", "rl", "rr",
-#     "si", "slopeoutlet", "precip",
-#     "temp", "kfact", "rockdepth",
-#     "rockvolume", "bpartexture",
-#     "cnbasin", "mr.ecdf"]]
-#
-#
-# """
-# Save the dataframe
-# """
-# # data.to_csv(path_or_buf="data_prepared.csv", sep=",")
-# data_selected.to_csv(path_or_buf="data_prepared.csv", sep=",")
-#
-# print("Done!")
-#
-#
-# # """
-# # Correlation
-# # """
-# # corr_matrix = data_selected.corr()
-# # fig, ax = plt.subplots(figsize=(9, 9))
-# # sns.heatmap(data=corr_matrix,
-# #             annot=False, square=True,
-# #             ax=ax, cbar_kws={'shrink': 0.733})
-# # plt.tight_layout()
-# # plt.show()
+# corr_matrix = data_selected.corr()
+# fig, ax = plt.subplots(figsize=(9, 9))
+# sns.heatmap(data=corr_matrix,
+#             annot=False, square=True,
+#             ax=ax, cbar_kws={'shrink': 0.733})
+# plt.tight_layout()
+# plt.show()
 
 print("Done!")
