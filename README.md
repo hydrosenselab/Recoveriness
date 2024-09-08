@@ -1,7 +1,10 @@
 # Flash Flood Recovery Analysis
 This repository contains the codes and supplementary materials for the paper [10.1175/JHM-D-23-0196.1](https://doi.org/10.1175/JHM-D-23-0196.1). 
 
-<img width="639" alt="image" src="https://github.com/user-attachments/assets/325c0f9b-988c-4eb2-8992-1880bfcb6ab1">
+<figure>
+    <img src="https://github.com/user-attachments/assets/325c0f9b-988c-4eb2-8992-1880bfcb6ab1" alt="image" width="639">
+    <figcaption>High Resolution Recoveriness Map</figcaption>
+</figure>
 
 
 ## Overview
