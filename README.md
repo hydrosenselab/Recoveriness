@@ -1,6 +1,9 @@
 # Flash Flood Recovery Analysis
 This repository contains the codes and supplementary materials for the paper [10.1175/JHM-D-23-0196.1](https://doi.org/10.1175/JHM-D-23-0196.1). 
 
+<img width="639" alt="image" src="https://github.com/user-attachments/assets/325c0f9b-988c-4eb2-8992-1880bfcb6ab1">
+
+
 ## Overview
 We have developed and implemented a new metric called Recoveriness to estimate the recovery potential of watersheds after flash floods. Using 78 years of historical flood data and advanced machine learning techniques, we provide probabilistic estimates of flash flood recoveriness across the conterminous United States. This approach models the recession limb of the hydrograph, which is essential in understanding post-flood recovery but has been less studied compared to the rising limb.
 
