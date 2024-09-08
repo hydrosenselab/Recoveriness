@@ -3,6 +3,7 @@ This repository contains the codes and supplementary materials for the paper [10
 
 <figure>
     <img src="https://github.com/user-attachments/assets/325c0f9b-988c-4eb2-8992-1880bfcb6ab1" alt="image" width="639">
+    <br>
     <figcaption style="text-align: center;">High Resolution Recoveriness Map</figcaption>
 </figure>
 
