@@ -19,8 +19,8 @@ We have developed and implemented a new metric called Recoveriness to estimate t
 
 ## Usage:
 - You can proceed by either cloning the repo or downloading the zipped version of the repo. 
-- Download all data from [zenodo](https://doi.org/10.5281/zenodo.13731743). Put the downloaded data into the 'data' folder of the repo.
+- Download all data from [zenodo](https://zenodo.org/doi/10.5281/zenodo.10090794). Put the downloaded data into the 'data' folder of the repo.
 - Run the program in sequence starting from '01-prepare_data.py'
 
 ## Published Dataset
-- [Recoveriness data](https://doi.org/10.5281/zenodo.13731743)
+- [Recoveriness data](https://zenodo.org/doi/10.5281/zenodo.10090794)
